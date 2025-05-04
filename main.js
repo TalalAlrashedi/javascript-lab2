@@ -86,3 +86,13 @@ if (dish !== "pizza"){
     console.log("Large pizza with extra cheese is ready!");
     
 }
+
+console.log("==========================================================");
+
+let eatsPlants = false;
+let eatsAnimals = true;
+
+let category = eatsPlants? "herbivore": eatsAnimals? "carnivore": eatsAnimals && eatsPlants? "omnivore" : undefined
+
+
+console.log(category)
