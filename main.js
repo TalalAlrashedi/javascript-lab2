@@ -1,3 +1,15 @@
+
+// - إذا كان `connectionType` هو `"fiber"`:
+//     - إذا كانت `speed` ≥ 500 → يطبع: `"Excellent fiber connection"`
+//     - إذا كانت `speed` بين 200 و 499 → يطبع: `"Good fiber connection"`
+//     - إذا كانت `speed` أقل من 200 → يطبع: `"Weak fiber connection"`
+// - إذا كان `connectionType` هو `"dsl"`:
+//     - إذا كانت `speed` ≥ 50 → يطبع: `"Acceptable DSL connection"`
+//     - إذا كانت `speed` أقل من 50 → يطبع: `"Poor DSL connection"`
+// - إذا كانت `connectionType` غير معروفة → يطبع: `"Unknown connection type"`
+// - إذا كانت `speed` أقل من 0 → يطبع: `"Invalid speed value"`
+
+
 let speed = 500;
 let connectionType = "fiber";
 
@@ -22,6 +34,19 @@ if (connectionType == "dls") {
 }
 
 console.log("==========================================================");
+
+
+// - اكتب كودًا يحول درجة رقمية إلى تقييم حرفي:
+//     - إذا كانت الدرجة بين 90 و 100: يطبع "A"
+//     - إذا كانت الدرجة بين 80 و 89: يطبع "B"
+//     - إذا كانت الدرجة بين 70 و 79: يطبع "C"
+//     - إذا كانت الدرجة بين 60 و 69: يطبع "D"
+//     - إذا كانت أقل من 60: يطبع "F"
+//     - المتطلبات:
+// 1. الكود يجب أن يحتوي على متغير grade.
+// 2. استخدم عبارات شرطية if...else if...else
+// 3. تحدي الخيارات المتعددة مع التحقق
+// 4. وصف التحدي:
 
 let grade = 10;
 
